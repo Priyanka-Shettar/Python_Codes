@@ -1,0 +1,14 @@
+# Python_Codes
+def Fib(n):
+    '''Function to find the fibonacci of range 10
+       Args:
+            n - type list
+       Returns:
+            returns the fibonacci  value of all the numbers present in the list
+    '''
+    fib = lambda n,a=0,b=1: a if n<=0 else fib(n-1,b,a+b)
+    return fib
+       
+List=Fib(list(range(1,10)))#passing the list of numbers from 1 to 10
+for i in range(1,10):
+    print(List(i))
